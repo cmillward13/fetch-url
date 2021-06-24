@@ -1,9 +1,10 @@
+const fetch = require('fetch')
 const core = require('@actions/core')
-const url = core.getInput('url', {required:true});
+
 
 const reDeploy = async ()=>{
+    const url = core.getInput('url', {required:true});   
     
-    console.log(url)
     await fetch(url)
     core.setOutput('completed', true)
 
