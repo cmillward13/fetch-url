@@ -1,0 +1,15 @@
+name: 'Redeploy site on scheduler'
+description: 're-deploys vercel site on scheduler trigger'
+inputs:
+  url:
+    description: 'the url you wish to fetch'
+    required: true
+outputs:
+  completed:
+    description: 'boolean value indicated if task was performed'
+runs:
+  using: 'node14'
+  main: 'dist/index.js'
+branding:
+  color: 'purple'
+  icon: 'clock'

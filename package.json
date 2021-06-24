@@ -1,0 +1,18 @@
+{
+  "name": "vercel-autodeploy-action",
+  "version": "1.0.0",
+  "description": "re-deploys vercel site on scheduler trigger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Github",
+    "Actions"
+  ],
+  "author": "Christopher Millward",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.4.0"
+  }
+}
